@@ -1,0 +1,395 @@
+::before, ::after, * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+ /* <uniquifier>: Use a unique and descriptive class name */
+ /* <weight>: Use a value from 200 to 900 */
+
+.source-code-pro-codeFont {
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: rgb(36, 36, 36);
+}
+
+hr {
+  margin: auto;
+  width: 25%;
+  border: 0.5px solid gray;
+  border-radius: 5px;
+  margin: 75px auto;
+}
+
+
+nav {
+  padding-bottom: 75px;
+}
+
+#navContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.nav-right a, .nav-right a:visited, .nav-right a:default {
+  text-decoration: none;
+  color: white;
+  transition: ease-in-out 300ms;
+}
+
+.nav-right {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav-right a:hover {
+  color: rgb(20, 220, 70);
+}
+
+.nav-left a, .nav-left a:visited, .nav-left a:default {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: rgb(20, 220, 70);
+}
+
+
+/* ////////////////////////////////////////////////// */
+
+/* ////////////////////////////////////////////////// */
+
+
+#intro, #skills, #projects, #contact {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1100px;
+}
+
+#intro .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+@media only screen and (max-width: 1100px) {
+
+  #intro .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+}
+
+.part1 {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  text-align: center;
+  align-items: center;
+}
+
+.part1 h1 {
+  font-size: 3.5rem;
+  line-height: 5rem;
+}
+
+.part1 p {
+  font-size: 1.5rem;
+  padding-top: 40px;
+  line-height: 3rem;
+}
+
+.part2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#intro u {
+  color: rgb(20, 220, 70);
+}
+
+
+
+#intro img {
+  border-radius: 50%;
+  border: 3px solid rgb(20, 220, 70);
+  max-width: 400px;
+  width: 75%;
+}
+
+
+
+/* ////////////////////////////////////////////////// */
+
+/* ////////////////////////////////////////////////// */
+
+
+@media only screen and (max-width: 768px) {
+  #skills .skillContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+  }
+  #skills h2 {
+    text-align: center;
+  }
+}
+
+
+#skills h2 {
+  font-size: 3rem;
+  padding-bottom: 30px;
+  text-decoration: underline;
+  text-decoration-color: rgb(20, 220, 70);
+}
+
+#skills p {
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+
+#skills .skillContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skillTitle {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  justify-content: center;
+
+}
+
+.skillList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 25px;
+  max-width: 45%;
+  justify-content: center;
+}
+
+.skillList p {
+  cursor:default;
+  transition: 400ms;
+}
+
+.skillList p:hover {
+  transform: scale(1.05);
+  color: rgb(20, 220, 70);
+}
+
+
+
+
+
+/* ////////////////////////////////////////////////// */
+
+/* ////////////////////////////////////////////////// */
+
+
+
+#projects h2 {
+  font-size: 3rem;
+  padding-bottom: 40px;
+  text-decoration: underline;
+  text-decoration-color: rgb(20, 220, 70);
+}
+
+#projects h3 {
+  font-size: 2.5rem;
+}
+
+#projects h4 {
+  font-size: 1.75rem;
+  transition: 300ms;
+}
+
+#projects h4:hover {
+  color: rgb(20, 220, 70);
+}
+
+#projects p {
+  line-height: 2rem;
+}
+
+#projects a {
+  text-decoration-color: rgb(20, 220, 70);
+}
+
+#projects b {
+  color: rgb(20, 220, 70);
+}
+
+@media only screen and (max-width: 768px) {
+  #projects {
+    text-align: center;
+  }
+
+}
+
+#projects .desc {
+  padding-bottom: 25px;
+}
+
+
+
+
+/* ////////////////////////////////////////////////// */
+
+/* ////////////////////////////////////////////////// */
+
+
+
+#contact {
+  padding-bottom: 50px;
+}
+
+
+#contact h2 {
+  font-size: 3rem;
+  padding-bottom: 40px;
+  text-decoration: underline;
+  text-decoration-color: rgb(20, 220, 70);
+}
+
+#contact p {
+  width: 50%;
+  padding-bottom: 20px;
+}
+
+
+#contact #formName, #formEmail, #formComment {
+  background-color: rgb(221, 221, 221);
+  color: black;
+  border-radius: 5px;
+  outline: none;
+}
+
+.forminput:focus {
+  border: 2px solid rgb(20, 220, 70);
+}
+
+#contact #formName, #formEmail {
+  height: 25px;
+  width: 225px;
+}
+
+#contact .formButton {
+  color: rgb(20, 220, 70);
+  background-color: rgb(36, 36, 36);
+  width: 100px;
+  height: 35px;
+  border: 2px solid rgb(20, 220, 70);
+  border-radius: 10px;
+  transition: 100ms;
+}
+
+#contact .formButton:hover {
+  background-color: rgba(221, 221, 221, 0.301);
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact .contactContainer {
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+#contact .contactDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-content: center;
+  transform: translateY(-20px);
+}
+
+#contact .contactDiv a {
+  color: rgb(20, 220, 70);
+}
+
+#contact i {
+  padding-right: 15px;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  #contact {
+    text-align: center;
+  }
+  #contact p { 
+    text-align: center;
+    width: 100%;
+  }
+
+  #contact .contactContainer {
+    justify-content: center;
+  }
+
+  #contact .formButton {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////// */
+
+/* ////////////////////////////////////////////////// */
+
+
+footer {
+  text-align: center;
+  padding: 75px 0 0 0;
+}
+
+footer span {
+  color: rgb(20, 220, 70);
+}
+
+.footerTag {
+  text-align: center;
+  font-size: 12px;
+  padding-bottom: 50px;
+}
